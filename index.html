@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScheduleMate | Book Your Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(121, 147, 147);">
+    <div class="container">
+        <header>
+            <h1>ScheduleMate</h1>
+            <p class="subtitle">Book your appointment easily and quickly</p>
+        </header>
+
+        <form id="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+
+        <div id="confirmation-message" class="hidden">
+            <p>Your appointment has been successfully booked! We will contact you soon.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
